@@ -1,6 +1,11 @@
 # pyJGI_API
 Contains function allowing for downloading of IMG genome data through their API.
 
+The function is based on the API instructions found at https://genome.jgi.doe.gov/portal/help/download.jsf
+
+The function uses pycurl to interact with the JGI Genome Portal and parses the xml output corresponing to each genome in order to find the particular file corresponding to the tar bundle. It then send a request to download the tar bundle file.
+
+
 Instructions:
 
 1) Make sure the JGI_download file is in the folder you would like to download the IMG tar files to
