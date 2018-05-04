@@ -1,15 +1,16 @@
 # pyJGI_API
 Contains function allowing for downloading of IMG genome data through their API.
 
-Instructions
+Instructions:
+
 1) Make sure the JGI_download file is in the folder you would like to download the IMG tar files to
 2) In a terminal open change to the directory where you would like to download the IMG tar files
 3) Start python from the command line
 4) In python run: from JGI_download import IMG_download
 5) use the funtion IMG_download(file, 'username', 'password') to obtain files from the JGI Genome portal
 
-
 Notes:
+
 Minor changes to the IMG_download function will enable it to download the other files available on the Genome Portal such as just the .fna file or just the .gff file. However, downloading the tar bundle is the quickest way to obtain all potentially desired files.
 
 The IMG_download function only works on genomes in IMG. Some changes to the function might enable it to download files from other JGI related databases. However, I built it with the intent to specifically download IMG genome files.
